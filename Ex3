@@ -4,6 +4,7 @@
  * @author Yevheniia 
  * @version 01 08.12.2020
  */
+ import java.io.PrintStream;
 public class Exercise03 extends Exercise03Base
 {
     void run() {
@@ -11,16 +12,18 @@ public class Exercise03 extends Exercise03Base
         /**
          * Die Anzahl an Kornern, die auf Kacheln liegen
          */
-        paule.write("Anzahl an Kornern: "+String.valueOf(territory.getTotalGrainCount()));
+        paule.write("Anzahl an Kornern: "+ String.valueOf(territory.getTotalGrainCount()));
+        System.out.println("Anzahl an Kornern: "+String.valueOf(territory.getTotalGrainCount()));
         /**
          * Die Gesamtzahl an Hamstern im Territorium
          */
         paule.write("Gesamtzahl an Hamster: "+String.valueOf(territory.getTotalHamsterCount()));
+        System.out.println("Gesamtzahl an Hamster: "+String.valueOf(territory.getTotalHamsterCount()));
         /**
          * Die Große des Territoriums
          */
         paule.write("Die Große des Territoriums: "+String.valueOf(territory.getTerritorySize()));        
-        
+        System.out.println("Die Große des Territoriums: "+String.valueOf(territory.getTerritorySize()));
         
         // TODO: Implement me!
         
