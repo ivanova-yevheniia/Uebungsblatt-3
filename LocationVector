@@ -1,0 +1,60 @@
+class LocationVector {
+
+    private final int deltaRow;
+    private final int deltaColumn;
+
+    /**
+     * Get the coordinates of the end of a vector.
+     */
+    public LocationVector(final int deltaRow, final int deltaColumn) {
+        super();
+        this.deltaRow = deltaRow;
+        this.deltaColumn = deltaColumn;
+    }
+    /**
+     * Get coordinates along y-axis
+     */
+    public int getDeltaRow() {
+        return deltaRow;
+    }
+    /**
+     * Get coordinates along x-axis
+     */
+    public int getDeltaColumn() {
+        return deltaColumn;
+    }
+    /**
+     * Get a new location
+     */
+    @Override
+    public int hashCode() {
+        final int prime = 31;
+        int result = 1;
+        result = prime * result + deltaRow;
+        result = prime * result + deltaColumn;
+        return result;
+    }
+    @Override
+    /**
+     * Сompar vector length 
+     */
+    public boolean equals(final Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final LocationVector other = (LocationVector) obj;
+        if (deltaRow != other.deltaRow) {
+            return false;
+        }
+        if (deltaColumn != other.deltaColumn) {
+            return false;
+        }
+        return true;
+    }
+}
