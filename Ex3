@@ -11,15 +11,15 @@ public class Exercise03 extends Exercise03Base
         /**
          * Die Anzahl an Kornern, die auf Kacheln liegen
          */
-        paule.write(String.valueOf(territory.getTotalGrainCount()));
+        paule.write("Anzahl an Kornern: "+String.valueOf(territory.getTotalGrainCount()));
         /**
          * Die Gesamtzahl an Hamstern im Territorium
          */
-        paule.write(String.valueOf(territory.getTotalHamsterCount()));
+        paule.write("Gesamtzahl an Hamster: "+String.valueOf(territory.getTotalHamsterCount()));
         /**
          * Die Große des Territoriums
          */
-        paule.write(String.valueOf(territory.getTerritorySize()));        
+        paule.write("Die Große des Territoriums: "+String.valueOf(territory.getTerritorySize()));        
         
         
         // TODO: Implement me!
