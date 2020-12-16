@@ -4,11 +4,30 @@
  * @author Yevheniia 
  * @version 01 08.12.2020
  */
- import java.io.PrintStream;
+import java.io.PrintStream;
 public class Exercise03 extends Exercise03Base
 {
     void run() {
         game.displayInNewGameWindow();
+        
+        printInform();
+        paule.turnLeft();
+        paule.turnLeft();
+        paule.turnLeft();
+        paule.move();
+        paule.move();
+        paule.move();
+        paule.pickGrain();
+        printInform();
+        
+        // TODO: Implement me!
+        
+        
+        // Leave this call intact for challenge 3!
+        challenge3();
+    }
+    
+    void printInform(){
         /**
          * Die Anzahl an Kornern, die auf Kacheln liegen
          */
@@ -24,17 +43,12 @@ public class Exercise03 extends Exercise03Base
          */
         paule.write("Die Große des Territoriums: "+String.valueOf(territory.getTerritorySize()));        
         System.out.println("Die Große des Territoriums: "+String.valueOf(territory.getTerritorySize()));
-        
-        // TODO: Implement me!
-        
-        
-        // Leave this call intact for challenge 3!
-        challenge3();
     }
-
+    
     void printWithJavaFX() {
         // Only for Challenge 3! Ignore otherwise!
         // TODO: Put the code for challenge 3 here. You can assume that this is 
         // run on the JavaFX thread
+        
     }
 }
