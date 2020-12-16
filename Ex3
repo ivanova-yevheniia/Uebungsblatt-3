@@ -1,0 +1,37 @@
+/**
+ * Beschreiben Sie hier die Klasse Exercise03.
+ * 
+ * @author Yevheniia 
+ * @version 01 08.12.2020
+ */
+public class Exercise03 extends Exercise03Base
+{
+    void run() {
+        game.displayInNewGameWindow();
+        /**
+         * Die Anzahl an Kornern, die auf Kacheln liegen
+         */
+        paule.write(String.valueOf(territory.getTotalGrainCount()));
+        /**
+         * Die Gesamtzahl an Hamstern im Territorium
+         */
+        paule.write(String.valueOf(territory.getTotalHamsterCount()));
+        /**
+         * Die Große des Territoriums
+         */
+        paule.write(String.valueOf(territory.getTerritorySize()));        
+        
+        
+        // TODO: Implement me!
+        
+        
+        // Leave this call intact for challenge 3!
+        challenge3();
+    }
+
+    void printWithJavaFX() {
+        // Only for Challenge 3! Ignore otherwise!
+        // TODO: Put the code for challenge 3 here. You can assume that this is 
+        // run on the JavaFX thread
+    }
+}
